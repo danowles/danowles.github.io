@@ -36,8 +36,8 @@ function validacao(e) {
 
   else {
     Swal.fire(
-      'Obrigada!',
-      'Conversaremos em breve!',
+      'Muito obrigada!',
+      'Sua mensagem foi enviada com sucesso! Conversaremos em breve :)',
       'success'
     );
     return true
@@ -50,5 +50,3 @@ function sleep(miliseconds) {
   while (currentTime + miliseconds >= new Date().getTime()) {
   }
 }
-
-//CONSERTAR ALERTA DE SUCESSO//

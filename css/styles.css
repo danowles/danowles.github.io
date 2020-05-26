@@ -10,27 +10,6 @@ header,
 }
 
 
-@media (max-width: 991px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 100vh;
-  }
-}
-
-
-
-@media (max-width: 991px) {
-  .view:before{
-    height: 100vh;
-    
-  }
-}
-
-
-
-
 
 /*SCROLLBAR*/
 
@@ -46,13 +25,15 @@ body::-webkit-scrollbar-thumb{
 /*SCROLLBAR*/
 
 
+
+
 nav a:hover, section#about-me:hover ~ nav a[href="#about-me"]{
   color: rgb(200, 200, 200);
   border-bottom: 2px solid white;
 }
 
 
-
+/*----------------------------------------------------*/
 
 .view:before{
   position: absolute;
@@ -76,18 +57,13 @@ nav a:hover, section#about-me:hover ~ nav a[href="#about-me"]{
   background: transparent !important;
 }
 
-@media (max-width: 991px) {
-  .navbar:not(.top-nav-collapse) {
-    background: rgb(18, 19, 20) !important;
-  }
-}
 
-h1 {
+#home h1 {
   letter-spacing: 3px;
   font-family: 'Baloo da 2', sans-serif;
 }
 
-h5 {
+#home h5 {
   letter-spacing: 3px;
   font-family: 'Baloo da 2', sans-serif
 }
@@ -109,24 +85,10 @@ h5 {
 }
 
 
-@media (max-width: 991px) {
-  .container-2 {
-    padding: 270px;
-    padding-left: 170px;
-  }
-}
 
-@media (max-width: 991px) {
-  h1 {
-    letter-spacing: 8px;
-  }
-}
+/*----------------------------------------------------*/
 
-@media (max-width: 991px) {
-  h5 {
-    letter-spacing: 5px;
-  }
-}
+
 
 /*SOBRE MIM*/
 
@@ -282,6 +244,13 @@ h5 {
   color: rgb(176, 90, 226);
 }
 
+
+/*FIM SOBRE*/
+
+
+/*----------------------------------------------------*/
+
+
 /*SKILLS*/
 
 #skills{
@@ -289,7 +258,6 @@ h5 {
   background-color: #ffff;
 
 }
-
 
 
 #skills .skills-content{
@@ -311,6 +279,37 @@ h5 {
   -webkit-box-shadow: 5px 5px 10px 0px rgba(60, 60, 60, 0.71);
   -moz-box-shadow:    5px 5px 10px 0px rgba(60, 60, 60, 0.71);
   box-shadow:         5px 5px 10px 0px rgba(60, 60, 60, 0.71);
+padding-top: 40px;
+padding-bottom: 35px;
+padding-left: 45px;
+padding-right: 45px;
+margin-top: 2px;
+display: flex;
+position: relative;
+top: 118px;
+width: 890px;
+}
+
+#skills .section-title h1{
+  text-align: left;
+  border-bottom: 2px solid #b05ae2;
+}
+
+
+#titulo-skills{ 
+  font-family: 'Baloo da 2', sans-serif; 
+  letter-spacing: 1px; 
+  color: white; 
+  width: 100px;
+  position: relative; 
+  left: 15px;
+}
+      
+
+#ul-skills{
+  position: relative; 
+  right: 100px; 
+  top: 70px;
 }
 
 .container-skills ul li{
@@ -392,46 +391,113 @@ h5 {
 }
 
 
+
+/*FIM SKILLS*/
+
+
+/*----------------------------------------------------*/
+
+
 /*PROJETOS*/
 
-.container-projects{
+#projetos{
+  padding: 100px 15px;
+  background-color: #ffffff;
+}
+
+#projetos .section-title{
+  font-family: 'Baloo da 2', sans-serif;
+  text-align: left;
+  border-bottom: 2px solid #b05ae2;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+#projetos .section-title h1:before{
+  left: 30%;
+}
+
+#projetos .projetos-content{
+  flex: 0 0 100%;
+  max-width: 100%;
   display: flex;
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  margin-left: 10%;
-  margin-right: 10%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#projetos .projetos-content .box{
+  flex: 0 0 calc(33.33% - 25px);
+  max-width: calc(33.33% - 25px);
+}
+
+#projetos .projetos-content .box .img{
+  overflow: hidden;
+}
+
+#projetos .projetos-content .box .img img{
+  width: 100%;
+  display: block;
+  transition: all .7s ease;
+}
+
+#projetos .projetos-content .box:hover .img img{
+  transform: scale(1.1);
 }
 
 
-.card{
-  -webkit-box-shadow: 6px 2px 6px 0px rgba(60, 60, 60, 0.39);
-  -moz-box-shadow:    6px 2px 6px 0px rgba(60, 60, 60, 0.39);
-  box-shadow:         6px 2px 6px 0px rgba(60, 60, 60, 0.39);
+#projetos .projetos-content .box .info{
+  padding: 10px 0;
 }
 
-.card-body h5{
-  font-family: 'Mukta', sans-serif;
-  font-size: 25px;
+#projetos .projetos-content .box .info span{
+  font-size: 12px;
+  color: #838383;
+  display: inline-block;
+}
+
+#projetos .projetos-content .box .info span:nth-child(2){
+  border-left: 1px solid #dddd;
+  padding-left: 8px;
+  margin-left: 10px;
+}
+
+#projetos .projetos-content .box h3{
+  font-family: 'Baloo da 2', sans-serif;
   letter-spacing: 1px;
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+  margin: 0 0 10px;
+  padding: 0;
 }
 
-.card-body p{
-  font-family: 'Open Sans Condensed:', sans-serif;
-  letter-spacing: 1px;
+#projetos .projetos-content .box p{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #838383;
+  margin: 0 0 10px;
+  
 }
 
-.btn{
-  background-color: rgb(176, 90, 226);
-  border-color: rgb(176, 90, 226);
+#projetos .projetos-content .box a{
   font-family: 'Mukta', sans-serif;
+  font-size: 14px;
+  color: #b05ae2;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 2px solid #b05ae2;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
-.btn:hover{
-  background-color: rgb(146, 60, 196);
-  border-color: #b05ae2;
-  font-family: 'Mukta', sans-serif;
+#projetos .projetos-content .box a:hover{
+  color: #000000;
+  border-color: #000000;
+
 }
 
 
@@ -439,10 +505,14 @@ h5 {
 /*FIM PROJETOS*/
 
 
+/*----------------------------------------------------*/
+
+
 /*CONTATO*/
 
 #contato {
   padding: 100px 15px;
+  margin-top: 80px;
   background-color: #f5f8fd;
 }
 
@@ -545,47 +615,18 @@ h5 {
     outline: 0;
 } 
 
+.form-control:focus{
+    -webkit-box-shadow: 2px 1px 2px 0px rgba(60, 60, 60, 0.39);
+    -moz-box-shadow: 2px 1px 2px 0px rgba(60, 60, 60, 0.39);
+    box-shadow: 2px 1px 2px 0px rgba(60, 60, 60, 0.39);
+    border: 1px inset red;
+    outline: 4px;
+}
 
 
+/*FIM CONTATO*/
 
 
-
-
-
-
-
-
-
-
-  
-  @media (max-width: 1199px) {
-    .section-title {
-     position: absolute;
-     bottom: 0px;
-     top: 1400px;
-     left: 50px;
-   }
-
-
-
-  @media (max-width: 1199px) {
-    .img {
-      position: absolute;
-      bottom: 0px;
-      top: 1500px;
-      left: 50px;
-    }
-
-
-
-
-  @media (max-width: 1199px) {
-    .text {
-      position: relative;
-      bottom: 0px;
-      top: 1130px;
-      left: 15px;
-    }
 
 
     #skillimg{
@@ -598,8 +639,3 @@ h5 {
 
 
 /*FIM SOBRE MIM*/
-
-
-
-
-#contato{

@@ -12,6 +12,7 @@
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-png" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsivo.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600&family=Comic+Neue:ital,wght@0,400;0,700;1,400;1,700&family=Mukta:wght@400;500&family=Open+Sans+Condensed:ital,wght@0,300;1,300&family=Press+Start+2P&family=Raleway:ital,wght@0,400;1,300;1,400&family=VT323&family=Yellowtail&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -67,7 +68,7 @@
 
             <li class="nav-item dropdown">
 
-              <a class="nav-link dropdown-toggle" href="#projetos" id="navbarDropdown" role="button"
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Projetos
               </a>
@@ -196,7 +197,7 @@
 
       <div class="row">
 
-        <div class="section-title" . style="font-family: 'Baloo da 2', sans-serif;">
+        <div id="title-about" class="section-title" . style="font-family: 'Baloo da 2', sans-serif;">
 
           <h1>Sobre</h1>
           <p . style="font-family: 'Baloo da 2', sans-serif; letter-spacing: 1px;">Informações sobre mim</p>
@@ -212,15 +213,18 @@
           <div class="row">
 
             <div class="img">
-              <img src="img/dandhara-about.png" alt="about-me" . style="height: 700px; width: auto;" />
+              <img src="img/dandhara-about.png" id="img-about" alt="about-me" . style="height: 700px; width: auto;" />
             </div>
 
-            <div class="text" . style="
+            <div id="text-about" class="text" . style="
                         padding-left: 50px;">
+
               <h4 . style="font-family: 'Baloo da 2', sans-serif; font-size: 35px;">Dandhara Bakhita</h4>
+              
               <h6 . style="font-family: 'Comic Neue', sans-serif;">Uma "pequena" mulher <span>DEVELOPER &
                   DESIGNER</span> com uma <span>grande</span> mente </h6>
-              <p . style="font-family: 'Open Sans Condensed', sans-serif; font-size: 18px;">Meu primeiro contato com a
+              
+                  <p . style="font-family: 'Open Sans Condensed', sans-serif; font-size: 18px;">Meu primeiro contato com a
                 programação foi com o <em>Scratch.</em> Depois de um tempo, comecei a estudar <em>Python</em>. Essa
                 linguagem de programação me fez ver como realmente funcionava um console. Mas foi somente com
                 <em>JavaScript</em> que me senti no mundo dos programadores. Comecei desenvolvendo um simples site
@@ -309,34 +313,34 @@
     <div class="skill" id="skillimg"
       style="background-image: url('img/codeskills2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; height: 730px;">
 
-      <div class="container-skills" .
+      <div id="container-skill" class="container-skills" .
         style="background-color: rgb(11, 11, 11); padding-top: 40px; padding-bottom: 35px; padding-left: 45px; padding-right: 45px; margin-top: 2px; display: flex; position: relative; top: 118px;">
 
+        <div class="section-title">
 
-        <h1 .
-          style="font-family: 'Baloo da 2', sans-serif; letter-spacing: 1px; color: white; position: relative; left: 15px;">
-          Skills</h1>
-
-        <hr class="hr-light my-2 wow fadeInDown" data-wow-delay="0.4s" . style="border-top: 
-                            2px solid rgb(176, 90, 226);
-                            width: 100px; position: relative; left: -148px; top: 40px;">
-
-        <p .
-          style="font-family: 'Baloo da 2', sans-serif; letter-spacing: 1px; color: white; position: relative; left: -315px; top: 60px;">
-          Minhas habilidades em Front-End.</p>
+              <h1 id="titulo-skills">
+                Skills</h1>
+        </div>
 
         <br><br>
 
-        <ul . style="position: relative; right: 615px; top: 100px;">
+        <div class="row">
+
+        <ul id="ul-skills">
 
           <li class="html" . style="color: white;">HTML</li>
 
+          
+
           <li class="css" . style="color: white;">CSS</li>
+
+          
 
           <li class="js" . style="color: white;">JAVASCRIPT</li>
 
         </ul>
 
+      </div>
 
       </div>
 
@@ -355,99 +359,94 @@
 
   <section id="projetos">
 
+    <div class="container">
 
+      <div class="row">
 
-    <div class="container-projects" . style="padding-bottom: 80px; height: 800px;">
+        <div class="section-title">
 
-      <div class="row-projects" . style="position: relative; left: 225px;">
-
-        <div class="titulo" . style="font-family: 'Baloo da 2', sans-serif;">
-
-          <h1 . style="letter-spacing: 2px;">Projetos</h1>
-          <hr class="hr-light my-2 wow fadeInDown" data-wow-delay="0.4s" . style="border-top: 
-                        2px solid rgb(176, 90, 226);
-                        width: 100px; position: relative; right: 30px; bottom: 6px;">
-
-          <p . style="position: relative; bottom: 5px; font-family: 'Baloo da 2', sans-serif;">Meus projetos até Hoje
-          </p>
+          <h1>Meus projetos</h1>
 
         </div>
 
       </div>
 
-      <div class="row" . style="position: relative; left: 25px; top: 150px">
+      <div class="row">
 
-        <div class="col-4-lg ml-5">
+        <div class="projetos-content">
 
-          <div class="card" style="width: 18rem; ;">
+              <div class="box">
 
-            <img src="img/simples.jpg" class="card-img-top" alt="Simples">
+                <div class="img">
 
-            <div class="card-body">
+                  <img src="img/simples.jpg" alt="Simples" height="200px" width="324px">
 
-              <h5 class="card-title" . style="text-align: center;">Simples</h5>
+                </div>
 
-              <p class="card-text" . style="text-align: center;">Lista com os links dos meus projetos mais simples, nada
-                muito estruturado.</p>
+                <div class="info">
+                  <span>30 Abri 2020</span> <span>Design</span>
+                </div>
 
-              <br>
+                <h3>Simples</h3>
+                <p>Lista com os links dos meus projetos mais simples, nada
+                  muito estruturado.</p>
+                <a href="project-simp.html">Quero conhecer!</a>
 
-              <a href="project-simp.html" class="btn btn-primary" . style="margin-left: 50px;">Quero conhecer!</a>
+              </div>
 
-            </div>
 
-          </div>
+              <div class="box">
 
-        </div>
+                <div class="img">
 
-        <div class="col-4-lg ml-5">
+                  <img src="img/avancado.jpg" alt="Avançado" height="200px" width="324px">
 
-          <div class="card" style="width: 18rem;">
+                </div>
 
-            <img src="img/avancado.jpg" class="card-img-top" alt="Avançado">
+                <div class="info">
+                  <span>27 Mai 2020</span> <span>Design</span>
+                </div>
 
-            <div class="card-body">
+                <h3>Avançado</h3>
+                <p>Lista com os links dos meus projetos avançados, com uma
+                  boa base e estrutura.</p>
+                <a href="project-avan.html">Quero conhecer!</a>
 
-              <h5 class="card-title" . style="text-align: center;">Avançado</h5>
+              </div>
 
-              <p class="card-text" . style="text-align: center;">Lista com os links dos meus projetos avançados, com uma
-                boa base e estrutura.</p>
-              <br>
 
-              <a href="project-avan.html" class="btn btn-primary" . style="margin-left: 50px;">Quero conhecer!</a>
+              <div class="box">
 
-            </div>
+                <div class="img">
 
-          </div>
+                  <img src="img/all.jpg" alt="Cover" height="200px" width="324px">
 
-        </div>
+                </div>
 
-        <div class="col-4-lg ml-5">
+                <div class="info">
+                  <span>6 Mai 2020</span> <span>Design</span>
+                </div>
 
-          <div class="card" style="width: 18rem;">
+                <h3>Cover</h3>
+                <p>Lista com os links dos meus projetos cover. Do site original para uma pequena reprodução.</p>
+                <a href="project-cover.html">Quero conhecer!</a>
 
-            <img src="img/all.jpg" class="card-img-top" alt="Cover" . style="width: 286px; height: 190.66px;">
-
-            <div class="card-body">
-
-              <h5 class="card-title" . style="text-align: center;">Cover</h5>
-
-              <p class="card-text" . style="text-align: center;">Lista com os links dos meus projetos cover, apenas uma
-                boa olhada em sua interface original para reproduzir.</p>
-
-              <a href="project-cover.html" class="btn btn-primary" . style="margin-left: 50px;">Quero conhecer!</a>
-
-            </div>
-
-          </div>
+              </div>
 
         </div>
 
       </div>
+
+    </div>
+
 
   </section>
 
   <!--FIM PROJETOS-->
+
+
+
+
 
   <!--CONTATO-->
 
@@ -520,6 +519,11 @@
   </section>
 
   <!--FIM CONTATO-->
+
+
+
+
+
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
