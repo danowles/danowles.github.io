@@ -1,4 +1,4 @@
-@media (max-width: 991px) {
+@media (max-width: 999px) {
     html,
     body,
     header,
@@ -8,12 +8,14 @@
   }
   
   
-  @media (max-width: 991px) {
+  @media (max-width: 999px) {
     .view:before{
       height: 100vh;
       
     }
   }
+
+  
 
 
 /*RESPONSIVO*/
@@ -74,7 +76,7 @@
 
 @media (max-width: 999px) {
     #about-me{
-        height: 1805px;
+        height: 2000px;
         padding: 800px 15px;
         background-color: white;
       }
@@ -85,8 +87,8 @@
     #title-about {
      position: absolute;
      bottom: 0px;
-     top: 820px;
-     left: 10%;
+     top: 800px;
+     left: 0%;
    }
 
 
@@ -95,8 +97,9 @@
     #img-about {
       position: absolute;
       bottom: 2000px;
-      top: 950px;
-      left: 10%px;
+      top: 900px;
+      left: 0%;
+
     }
 
 
@@ -105,8 +108,8 @@
     #text-about {
       position: relative;
       bottom: 0px;
-      top: 1000px;
-      left: -200px;
+      top: 900px;
+      right: 30%;
     }
 
 
@@ -122,9 +125,17 @@
 @media (max-width: 991px) {
     #container-skill{
       height: 65vh;
-      width: 85vw;
+      width: 100%;
     }
   }
+
+
+  @media (max-width: 991px) {
+    #skillimg{
+      width: 100%;
+    }
+  }
+  
 
 
 @media (max-width: 991px) {
@@ -239,189 +250,3 @@
     }
   }
   }
-
-  /*SKILLS RESPONSIVO*/
-
-
-    
-
-/*----------------------------------------------------*/
-
-
-
-
-/*PROJETOS RESPONSIVO*/
-
-
-@media (max-width: 991px) {
-    .fundo-projects{
-        background: yellow;
-        width: 100%;
-        height: auto;
-  }
-}
-  
-@media (max-width: 991px) {
-  #container-projects{
-    background-color: blue;
-    margin: 2px 550px 0px;
-    padding: 40px 45px 35px;
-    position: relative;
-    left: 10%;
-    display: flex;
-    width: 90%;
-    height: 1400px;
-  }
-}
-  
-  
-@media (max-width: 991px) {
-    .row-projects{
-        position: relative; 
-        left: 900px;
-      }
-  } 
-}
-
-
-@media (max-width: 991px) {
-    .titulo{ 
-    font-family: 'Baloo da 2', sans-serif;
-  } 
-}
-
-  
-@media (max-width: 991px) {  
-  #title-projects{ 
-      position: relative;
-      right: 220px;
-      letter-spacing: 1.5px;
-  }
-}
-
-
-@media (max-width: 991px) {  
-  #barra-projects{ 
-    border-top: 2px solid rgb(176, 90, 226);
-    width: 100px; 
-    position: relative; 
-    right: 247px; 
-    bottom: 8px;
-  } 
-}
-  
-@media (max-width: 991px) {
-    #p-projects{ 
-      font-family: 'Baloo da 2', sans-serif;  
-      position: relative; 
-      bottom: 7px; 
-      right: 220px; 
-  } 
-}
-  
-@media (max-width: 991px) {
-    #row-cards{
-        position: relative; 
-        top: 150px;
-    }
- }
-
- /*CARDS*/
-
- @media (max-width: 991px) {
-    #card1{
-        position: relative; 
-        top: 10px;
-    }
- }
-
- @media (max-width: 991px) {
-    #card2{
-        position: relative; 
-        top: 20px;
-    }
- }
-
-
- @media (max-width: 991px) {
-    #card3{
-        position: relative;  
-        top: 30px;
-    }
- }
-
-  /*CARDS*/
-
-  
-  @media (max-width: 991px) {
-      .card{
-        -webkit-box-shadow: 6px 2px 6px 0px rgba(60, 60, 60, 0.39);
-        -moz-box-shadow: 6px 2px 6px 0px rgba(60, 60, 60, 0.39);
-        box-shadow: 6px 2px 6px 0px rgba(60, 60, 60, 0.39);
-  }
-    
-}
-  
-  
- 
-  @media (max-width: 991px) {
-      .card-body h5{
-        font-family: 'Mukta', sans-serif;
-        font-size: 25px;
-        letter-spacing: 1px;
-  }
-    
-}
-  
- 
-  @media (max-width: 991px) {
-      .card-body p{
-        font-family: 'Open Sans Condensed:', sans-serif;
-        letter-spacing: 1px;
-  }
-    
-}
-  
- 
-  @media (max-width: 991px) {
-      .btn{
-        background-color: rgb(176, 90, 226);
-        border-color: rgb(176, 90, 226);
-        font-family: 'Mukta', sans-serif;
-  }
-    
-}
-  
- 
-  @media (max-width: 991px) {
-      .btn:hover{
-        background-color: rgb(146, 60, 196);
-        border-color: #b05ae2;
-        font-family: 'Mukta', sans-serif;
-  }
-    
-}
-  
- 
-
-
-/*PROJETOS RESPONSIVO*/
-
-
-
-
-/*----------------------------------------------------*/
-
-
-
-
-/*CONTATO RESPONSIVO*/
-    
-
-
-DSADASSADSDSD
-
-
-
-
-/*CONTATO RESPONTIVO*/
