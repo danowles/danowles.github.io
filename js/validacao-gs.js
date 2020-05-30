@@ -43,7 +43,7 @@ function validacao(e) {
     
     var $form = $("#formContato");
     $.post($form.attr("action"), $form.serialize()).then(function() {
-      alert("Thank you!");
+  
     });
     return true
   }
