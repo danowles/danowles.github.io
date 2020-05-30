@@ -39,7 +39,12 @@ function validacao(e) {
       'Muito obrigada!',
       'Sua mensagem foi enviada com sucesso! Conversaremos em breve :)',
       'success'
-    );
+    ); 
+    
+    var $form = $("#formContato");
+    $.post($form.attr("action"), $form.serialize()).then(function() {
+      alert("Thank you!");
+    });
     return true
   }
 }
@@ -50,12 +55,3 @@ function sleep(miliseconds) {
   while (currentTime + miliseconds >= new Date().getTime()) {
   }
 }
-
-$("#formContato").submit(function(e) {
-  e.preventDefault();
-
-  var $form = $(this);
-  $.post($form.attr("action"), $form.serialize()).then(function() {
-    alert("Thank you!");
-  });
-});
