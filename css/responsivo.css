@@ -209,7 +209,7 @@
       background-color: rgb(176, 61, 230);
       border-radius: 5px;
   
-      animation-duration: 7s;
+      animation-duration: 30s;
       animation-timing-function: ease;
       animation-fill-mode: forwards;
     }
